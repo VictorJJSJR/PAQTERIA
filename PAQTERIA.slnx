@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="paqteria.client/paqteria.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="PAQTERIA.Server/PAQTERIA.Server.csproj" />
+</Solution>

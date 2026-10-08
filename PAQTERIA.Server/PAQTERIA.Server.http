@@ -1,0 +1,28 @@
+@PAQTERIA.Server_HostAddress = https://localhost:7224
+
+GET {{PAQTERIA.Server_HostAddress}}/api/health
+Accept: application/json
+
+###
+
+GET {{PAQTERIA.Server_HostAddress}}/api/dashboard
+Accept: application/json
+
+###
+
+GET {{PAQTERIA.Server_HostAddress}}/api/packages
+Accept: application/json
+
+###
+
+POST {{PAQTERIA.Server_HostAddress}}/api/packages
+Content-Type: application/json
+
+{
+  "trackingNumber": "PQ-2026-0001",
+  "senderName": "Remitente de ejemplo",
+  "originCenterId": 1,
+  "originAddress": "Dirección de origen",
+  "destinationAddress": "Dirección de destino",
+  "weightKg": 1.25
+}
